@@ -1,0 +1,120 @@
+body{
+    width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-size: 300% 300%;
+  background-image: linear-gradient(
+        -45deg, 
+        rgba(59,173,227,1) 0%, 
+        rgba(87,111,230,1) 25%, 
+        rgba(152,68,183,1) 51%, 
+        rgba(255,53,127,1) 100%
+  );  
+  animation: AnimateBG 20s ease infinite;
+}
+@keyframes AnimateBG { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+  }
+.container{
+    font-family: 'Lobster', cursive;
+    color: white;
+    font-size: 30px;
+    padding-left: 18%;
+    padding-bottom: 5%;
+}
+.main{
+    border: dashed 2px rgb(197, 200, 189);
+    border-radius: 6px;
+    width: 1000px;
+    margin-left: 250px;
+    margin-top: 45px;
+    height: 730px;
+}
+.hex1{
+    font-family: 'Lobster', cursive;
+    color: wheat;
+    font-size: 28px;
+    padding-left: 18%;
+    padding-right: 3%;
+    
+}
+input[type="text"]{
+    border-radius: 4px;
+    height: 20px;
+    background-color:cornsilk;
+    margin-bottom: 3%;
+}
+.hex2{
+    font-family: 'Lobster',cursive;
+    color: wheat;
+    padding-left: 18%;
+    font-size:28px;
+    
+}
+#input-el{
+    font-family: 'Lobster',cursive;
+    color: wheat;
+    font-size: 28px;
+    padding-left: 18%;
+    padding-top: 2%;
+}
+#inputColor{
+    margin-left: 18%;
+    height: 60px;
+    width: 500px;
+    background-color: white;
+}
+#altered-el{
+    font-family: 'Lobster',cursive;
+    color: wheat;
+    font-size: 28px;
+    padding-left: 18%;
+    padding-top: 2%;
+    margin-top: 10px;
+}
+#alteredColor{
+    margin-left: 18%;
+    width: 500px;
+    height:60px;
+    background-color: white;
+}
+.toggle {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-left: 18%;
+}
+.toggle-text {
+    font-size: 18px;
+    font-family: 'Lobster',cursive;
+    color: wheat;
+}
+
+.toggle-btn {
+    height: 30px;
+    width: 60px;
+    background-color: gray;
+    border-radius: 30px;
+    padding: 5px;
+    margin: 0 10px;
+
+}
+
+.inner-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    transition: all 250ms;
+}
+
+.toggle-btn.toggled > .inner-circle {
+    transform: translateX(30px);
+    background-color: #333;
+}
+
+.unselected {
+    opacity: 0.25;
+}
